@@ -6,8 +6,8 @@
     "start": "node server.js"
   },
   "engines": {
-    "engines": {
   "node": "20"
+}
 }
   },
   "dependencies": {
