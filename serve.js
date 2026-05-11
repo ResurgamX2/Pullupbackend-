@@ -132,18 +132,4 @@ const server = http.createServer((req, res) => {
 const port = parseInt(process.env.PORT || "3000", 10);
 server.listen(port, "0.0.0.0", () => {
   console.log(`Serving static Expo build on port ${port}`);
-});import express from "express";
-
-const app = express();
-
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send("PullUp backend running");
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, "0.0.0.0", () => {
-  console.log("Server running on port", PORT);
 });
